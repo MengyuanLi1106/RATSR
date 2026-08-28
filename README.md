@@ -45,7 +45,7 @@ To run the visual demo, use:
 python demo.py                                
 ```
 
-This script reads images from `data/demo/GT`, first downsamples each image, then performs super-resolution using the provided RATSR model. The low-resolution inputs and super-resolved outputs are saved in the `output` directory.
+This script reads images from `data/demo/GT`, then performs super-resolution using the provided RATSR model. The super-resolved outputs are saved in the `output` directory.
 
 For quantitative evaluation, put the downloaded test-set ground-truth thermal images into:
 
@@ -75,7 +75,7 @@ If the dataset is placed in another folder, please modify `root_path` in `config
 To evaluate PSNR and SSIM on the test set, use:
 
 ```bash
-python test.py --scale 2 2.3 2.45 2.6 3 3.12 3.55 3.72 4
+python test.py --scale 2 3 4
 ```
 
 By default, `test.py` loads:
@@ -84,8 +84,6 @@ By default, `test.py` loads:
 configs/test.yaml
 checkpoints/best.pth
 ```
-
-The reconstructed images and quantitative results are saved in the `output` directory.
 
 ### 3. Contact
 If you have any questions, please contact me.
