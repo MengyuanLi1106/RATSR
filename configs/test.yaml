@@ -1,0 +1,27 @@
+test_dataset_x2:
+  dataset:
+    name: image-folder
+    args:
+      root_path: data/test/GT
+  wrapper:
+    name: sr-implicit-downsampled-fast
+    args:
+      scale_min: 2
+      scale_max: 2
+  batch_size: 1
+  num_workers: 0
+
+eval_type: mine
+eval_bsize: None
+
+data_norm:
+  inp: {sub: [0.5], div: [0.5]}
+  gt: {sub: [0.5], div: [0.5]}
+
+model:
+  name: ratsr
+  args:
+    encoder_spec:
+      name: ringsr-baseline
+      args:
+        no_upsampling: true
