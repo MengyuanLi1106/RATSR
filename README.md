@@ -1,9 +1,3 @@
-# An Intelligent UAV Thermal Imaging System with Arbitrary-Scale Super-Resolution 
-
-
-## Abstract
-Typical unmanned aerial vehicle (UAV) thermal imaging systems are often limited by the low spatial resolution of onboard thermal sensors, which restricts the ability to provide clear and flexible-resolution perception during real-world missions. This limitation becomes more critical when multi-scale observation and zoom are required, while existing super-resolution (SR) methods are difficult to deploy due to their high computational cost. To address this challenge, we propose an intelligent UAV thermal imaging system with arbitrary-scale thermal SR. Specifically, a novel lightweight ring convolution (LRingConv) is introduced to enhance texture-aware feature extraction by emphasizing boundary and high-frequency thermal structures. Based on LRingConv, a lightweight ring convolution module (LRCM) is designed to effectively combine texture-sensitive and structural feature representations. In addition, a novel anisotropic diffusion field upsampler is incorporated to explicitly model anisotropic spatial relationships in thermal images, enabling direction-adaptive feature aggregation for continuous-scale reconstruction while maintaining low computational overhead. Extensive experiments on the public thermal SR benchmark demonstrate that the proposed system achieves superior reconstruction performance. Furthermore, real-world application results show that the system achieves real-time performance under different operational modes, delivering 79.59 FPS for part-frame zoom-in SR and 20.03 FPS for $\times$2 full-frame global-view SR on the UAV thermal imaging system.
-
 ## Dataset
 ### UAV-TSR++ Dataset
 📦 **Download (Baidu Netdisk)**  
